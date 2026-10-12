@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#ffd8e5" />
+  <meta name="description" content="A soft pink birthday story for Keerthana." />
+  <title>happy birthday, keerthana ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Borel&family=DM+Mono:wght@400;500&family=Fredoka:wght@400;500;600;700&family=Gochi+Hand&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <div class="cursor-sparkles" aria-hidden="true"></div>
+    <div class="asset-flowers" aria-hidden="true">
+      <img class="asset-flower" src="assets/flower1.png" alt="" /><img class="asset-flower" src="assets/flower2.png" alt="" /><img class="asset-flower" src="assets/flower3.png" alt="" /><img class="asset-flower" src="assets/flower4.png" alt="" /><img class="asset-flower" src="assets/flower1.png" alt="" /><img class="asset-flower" src="assets/flower2.png" alt="" /><img class="asset-flower" src="assets/flower3.png" alt="" /><img class="asset-flower" src="assets/flower4.png" alt="" /><img class="asset-flower" src="assets/flower1.png" alt="" /><img class="asset-flower" src="assets/flower2.png" alt="" /><img class="asset-flower" src="assets/flower3.png" alt="" /><img class="asset-flower" src="assets/flower4.png" alt="" /><img class="asset-flower" src="assets/flower1.png" alt="" /><img class="asset-flower" src="assets/flower2.png" alt="" /><img class="asset-flower" src="assets/flower3.png" alt="" />
+    </div>
+    <header class="site-header">
+      <div class="brand"><span class="brand-mark">♡</span><span>for<br /><em>keerthana</em></span></div>
+      <button class="sound-button" id="soundButton" type="button" aria-pressed="false" title="Play or pause Lover"><span class="sound-icon">♪</span><span id="soundLabel">play music</span></button>
+      <audio id="loverAudio" src="assets/lover.m4a" loop autoplay preload="metadata"></audio>
+    </header>
+
+    <nav class="progress" aria-label="Birthday story navigation">
+      <a class="progress-step active" data-step="0" href="#intro"><span>01</span><i>intro</i></a>
+      <span class="progress-line" aria-hidden="true"></span>
+      <a class="progress-step" data-step="1" href="#wish"><span>02</span><i>wish</i></a>
+      <span class="progress-line" aria-hidden="true"></span>
+      <a class="progress-step" data-step="2" href="#memories"><span>03</span><i>memories</i></a>
+    </nav>
+
+    <main class="story" aria-live="polite">
+      <section class="story-card intro-card active" id="intro" data-card="0">
+        <div class="intro-copy">
+          <h1>Happiest<br /><em>birthday,</em><br />Keerthana!</h1>
+        </div>
+        <div class="art-frame intro-art"><img src="assets/intro-card.png" alt="Hand-drawn birthday intro card for Keerthana" /></div>
+        <button class="next-button" data-next="1" type="button">go to your wish card <span>↗</span></button>
+      </section>
+
+      <section class="story-card wish-card" id="wish" data-card="1" aria-hidden="true">
+        <div class="wish-heading">
+          <h2>this one is<br /><em>just for you ♡</em></h2>
+        </div>
+        <div class="video-wrap">
+          <img class="wish-art wish-art-left" src="assets/wish-card.png" alt="Pink lotus and hand-drawn hearts" />
+          <div class="video-frame"><video id="birthdayVideo" controls playsinline preload="metadata" src="assets/video.mp4"></video><span class="video-label">a little birthday film ♡</span></div>
+          <img class="wish-art wish-art-right" src="assets/wish-card.png" alt="Pink lotus and hand-drawn hearts" />
+        </div>
+        <div class="wish-actions"><button class="back-button" data-back="0" type="button">← back</button><button class="next-button" data-next="2" type="button">open the memories <span>↗</span></button></div>
+      </section>
+
+      <section class="story-card memories-card" id="memories" data-card="2" aria-hidden="true">
+        <div class="memories-heading"><h2>a small archive<br /><em>of us ♡</em></h2></div>
+        <div class="memory-grid">
+          <figure class="memory memory-01"><img src="assets/memory-01.jpeg" alt="Keerthana and a friend smiling together" /><figcaption>the smiles say it all</figcaption></figure>
+          <figure class="memory memory-02"><img src="assets/memory-02.jpeg" alt="Two friends posing together" /><figcaption>soft little moments</figcaption></figure>
+          <figure class="memory memory-03"><img src="assets/memory-03.jpeg" alt="Friends laughing together" /><figcaption>love embarassing you</figcaption></figure>
+          <figure class="memory memory-04"><img src="assets/memory-04.jpeg" alt="Friends sharing a playful moment" /><figcaption>my favourite kind of chaos</figcaption></figure>
+          <figure class="memory memory-05"><img src="assets/memory-05.jpeg" alt="Keerthana pictured through a window" /><figcaption>main character energy</figcaption></figure>
+        </div>
+        <div class="memories-footer"><p>happy 20th, Keerthana ♡<br /><span>love you more than this page can say.</span></p><button class="back-button" data-back="1" type="button">← replay the wish</button></div>
+      </section>
+    </main>
+    <footer class="site-footer"><span>made with love + a little bit of cringe</span><span>♡ 2026</span></footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
